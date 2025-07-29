@@ -1,0 +1,110 @@
+/* src/components/NoticeModal.css */
+
+.modal-overlay {
+  position: fixed; /* Akan menutupi seluruh layar */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Pastikan di atas semua elemen lain */
+  opacity: 0; /* Mulai dengan transparan */
+  animation: fadeIn 0.3s forwards; /* Animasi fade in */
+}
+
+.modal-content {
+  background: rgba(10, 10, 20, 0.95); /* Background gelap, sedikit transparan */
+  border: 1px solid rgba(100, 150, 255, 0.5); /* Border kebiruan */
+  border-radius: 15px;
+  padding: 30px;
+  position: relative;
+  max-width: 500px; /* Lebar maksimum modal */
+  width: 90%; /* Lebar responsif */
+  max-height: 80vh; /* Tinggi maksimum, agar bisa di-scroll jika konten banyak */
+  overflow-y: auto; /* Aktifkan scroll jika konten melebihi max-height */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+  transform: scale(0.8); /* Mulai sedikit mengecil */
+  animation: zoomIn 0.3s forwards; /* Animasi zoom in */
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(40, 40, 70, 0.8);
+  color: #a0d0ff;
+  border: 1px solid rgba(160, 208, 255, 0.4);
+  border-radius: 50%; /* Bentuk bulat */
+  width: 30px;
+  height: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 1001;
+}
+
+.modal-close-button:hover {
+  background: rgba(60, 60, 90, 0.9);
+  transform: scale(1.1);
+}
+
+.modal-content h3 {
+  color: #a0d0ff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.notice-body ul {
+  list-style: none; /* Hapus bullet default */
+  padding: 0;
+  margin: 0;
+}
+
+.notice-body li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .modal-close-button {
+    width: 25px;
+    height: 25px;
+    font-size: 1em;
+  }
+  .modal-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .notice-body li {
+    font-size: 0.9em;
+  }
+}

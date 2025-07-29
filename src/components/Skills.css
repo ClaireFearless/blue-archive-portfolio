@@ -1,0 +1,149 @@
+/* src/components/Skills.css */
+
+/* Menggunakan kembali gaya dasar dari .content-panel di App.css */
+/* Ini memastikan konsistensi dalam padding, border, shadow, dan background */
+
+.skills-panel {
+    /* Gaya khusus untuk panel skills jika diperlukan,
+       tapi sebagian besar akan mewarisi dari .content-panel */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan konten di tengah panel */
+    text-align: center;
+}
+
+.skills-panel h3 {
+    /* Mengikuti gaya h3 dari content-panel */
+    margin-bottom: 25px; /* Sedikit lebih banyak ruang di bawah judul */
+}
+
+.skills-panel p {
+    font-size: 1em;
+    color: #e0e0e0;
+    margin-bottom: 30px; /* Jarak bawah sebelum grid skills */
+    max-width: 600px; /* Batasi lebar teks deskripsi */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grid responsif */
+    gap: 20px; /* Jarak antar kartu kategori skill */
+    width: 100%; /* Mengisi lebar panel */
+    max-width: 1000px; /* Batasi lebar maksimal grid */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.skill-category-card {
+    background: rgba(30, 30, 50, 0.9); /* Background kartu skill, mirip project-item */
+    border: 1px solid rgba(120, 180, 255, 0.4);
+    border-radius: 12px; /* Sudut sedikit lebih membulat */
+    padding: 20px;
+    text-align: left; /* Teks dalam kartu rata kiri */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-category-card:hover {
+    transform: translateY(-7px); /* Efek sedikit terangkat saat hover */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6), 0 0 10px rgba(160, 208, 255, 0.3); /* Shadow lebih kuat + glow */
+}
+
+.skill-category-card h4 {
+    color: #a0d0ff; /* Warna judul kategori */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.25em; /* Ukuran judul kategori */
+    border-bottom: 1px solid rgba(160, 208, 255, 0.2); /* Garis bawah judul */
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.skill-category-card ul {
+    list-style: none; /* Hapus bullet default */
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category-card ul li {
+    font-size: 1em;
+    color: #f0f0f0; /* Warna teks skill */
+    margin-bottom: 8px; /* Jarak antar item skill */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara ikon (jika ada) dan teks */
+}
+
+.skill-category-card ul li::before {
+    content: '•'; /* Menggunakan bullet kustom */
+    color: #80c0ff; /* Warna bullet kustom */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; /* Memastikan spasi yang konsisten */
+    margin-left: -1em; /* Menarik bullet agar teks rata */
+}
+
+
+/* Responsive Adjustments for Skills Panel */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    .skill-category-card {
+        padding: 18px;
+    }
+    .skill-category-card h4 {
+        font-size: 1.2em;
+    }
+    .skill-category-card ul li {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+        gap: 15px;
+    }
+    .skills-panel p {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    .skill-category-card {
+        padding: 15px;
+    }
+    .skill-category-card h4 {
+        font-size: 1.1em;
+    }
+    .skill-category-card ul li {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-panel {
+        padding: 15px;
+    }
+    .skills-panel h3 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    .skills-panel p {
+        font-size: 0.85em;
+        margin-bottom: 15px;
+    }
+    .skill-category-card {
+        padding: 12px;
+    }
+    .skill-category-card h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+    }
+    .skill-category-card ul li {
+        font-size: 0.85em;
+        margin-bottom: 6px;
+    }
+}
