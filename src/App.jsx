@@ -123,7 +123,7 @@ function App() {
         {renderContent()}
       </main>
 
-      <NavBar activeSection={activeSection} setActiveSection={setActiveSection} />
+      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
     </div>
   );
 }
