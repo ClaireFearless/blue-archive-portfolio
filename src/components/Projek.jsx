@@ -1,7 +1,7 @@
 // src/components/Projek.jsx
 import React from 'react';
 
-// Komponen Projek menerima stopPropagation sebagai prop
+
 function Projek({ stopPropagation }) {
   return (
     <div className="content-panel" onClick={stopPropagation}>
@@ -17,7 +17,6 @@ function Projek({ stopPropagation }) {
           <p>Cukup satu tautan menggantikan banyak link berbeda</p>
           <a href="https://linktreeclaire.netlify.app" target="_blank" rel="noopener noreferrer">Lihat Projek</a>
         </div>
-        {/* Tambahkan daftar proyek Anda di sini */}
       </div>
     </div>
   );

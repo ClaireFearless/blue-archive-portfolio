@@ -13,10 +13,6 @@ function NoticeModal({ isOpen, onClose }) {
         </button>
         <h3>NOTICE: Website Updates!</h3>
         <div className="notice-body">
-          {/* ========================================================= */}
-          {/* !!! KONTEN NOTICE ANDA YANG LENGKAP !!!                 */}
-          {/* (Disusun dari yang terbaru ke terlama, tanggal bisa diubah) */}
-          {/* ========================================================= */}
           <ul>
             {/* Updates terkait Portofolio ini (paling baru) */}
             <li>• [19 Juli 2025] Optimalisasi Responsivitas: Penyesuaian tampilan untuk pengalaman yang lebih baik di berbagai perangkat (termasuk fix scroll).</li>
@@ -39,12 +35,9 @@ function NoticeModal({ isOpen, onClose }) {
             <li>• [20 Mei 2025] Desain Ulang Navbar untuk meningkatkan responsivitas.</li>
             <li>• [15 Mei 2025] Inisiasi Proyek **HIKARI STORE**: Memulai pengembangan web bisnis menggunakan Laravel.</li>
 
-            {/* Proyek lain yang sempat disebut */}
             <li>• [10 Mei 2025] Proyek 'SHOWCASE LOW PROFILE' dimulai (fokus pada optimasi layout).</li>
 
-            {/* Anda bisa menambahkan lebih banyak poin di sini */}
           </ul>
-          {/* ========================================================= */}
         </div>
       </div>
     </div>

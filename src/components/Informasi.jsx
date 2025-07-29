@@ -1,7 +1,7 @@
 // src/components/Informasi.jsx
 import React from 'react';
 
-// Komponen Informasi menerima stopPropagation sebagai prop
+
 function Informasi({ stopPropagation }) {
   return (
     <div className="content-panel" onClick={stopPropagation}>

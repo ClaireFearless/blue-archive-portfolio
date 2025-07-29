@@ -29,7 +29,6 @@ function Skills({ stopPropagation }) {
         ))}
       </div>
 
-      {/* Anda bisa menambahkan bagian lain di sini, misalnya progress bar atau ikon */}
     </div>
   );
 }

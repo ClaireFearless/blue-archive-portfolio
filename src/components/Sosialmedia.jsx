@@ -11,7 +11,7 @@ function SosialMedia({ stopPropagation }) {
         {/* Instagram */}
         <li>
           <a href="https://www.instagram.com/hi.onyyxz?igsh=MWNwYjgxejF6YWFwaA==" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/ig.svg" alt="Instagram" className="social-icon" /> {/* <--- Tambahkan ini */}
+            <img src="/icons/ig.svg" alt="Instagram" className="social-icon" /> 
             Instagram
           </a>
         </li>
@@ -19,7 +19,7 @@ function SosialMedia({ stopPropagation }) {
         {/* GitHub */}
         <li>
           <a href="https://github.com/ClaireFearless" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/github.svg" alt="GitHub" className="social-icon" /> {/* <--- Tambahkan ini */}
+            <img src="/icons/github.svg" alt="GitHub" className="social-icon" /> 
             GitHub
           </a>
         </li>
@@ -27,23 +27,23 @@ function SosialMedia({ stopPropagation }) {
         {/* Fesnuk */}
         <li>
           <a href="https://www.facebook.com/onyyclaire" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/fesnuk.svg" alt="GitHub" className="social-icon" /> {/* <--- Tambahkan ini */}
+            <img src="/icons/fesnuk.svg" alt="GitHub" className="social-icon" /> 
             Facebook
           </a>
         </li>
 
         {/* Gmail */}
         <li>
-          <a href="mailto:onyxnymcraft@gmail.com" target="_blank" rel="noopener noreferrer"> {/* Pastikan ini email Anda yang benar */}
-            <img src="/icons/gmail.svg" alt="Gmail" className="social-icon" /> {/* <--- Tambahkan ini */}
+          <a href="mailto:onyxnymcraft@gmail.com" target="_blank" rel="noopener noreferrer"> 
+            <img src="/icons/gmail.svg" alt="Gmail" className="social-icon" /> 
             Gmail
           </a>
         </li>
         
         {/* Whatsapp */}
         <li>
-          <a href="https://wa.me/6285648692935" target="_blank" rel="noopener noreferrer"> {/* Pastikan ini email Anda yang benar */}
-            <img src="/icons/wa.svg" alt="Gmail" className="social-icon" /> {/* <--- Tambahkan ini */}
+          <a href="https://wa.me/6285648692935" target="_blank" rel="noopener noreferrer"> 
+            <img src="/icons/wa.svg" alt="Gmail" className="social-icon" /> 
             WhatsApp
           </a>
         </li>

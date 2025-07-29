@@ -26,11 +26,11 @@ function NavBar({ activeSection, setActiveSection }) {
         className={`nav-button ${activeSection === 'skills' ? 'active' : ''}`}
         onClick={() => setActiveSection('skills')}
       >
-        {/* Pastikan Anda memiliki ikon 'skill.svg' atau ganti path ini */}
+
         <img src="/icons/skills.svg" alt="My Skills" /> 
         <span>My Skills</span>
       </button>
-      {/* ------------------------------------------- */}
+
 
       <button
         className={`nav-button ${activeSection === 'sosialmedia' ? 'active' : ''}`}

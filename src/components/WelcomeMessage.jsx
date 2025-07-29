@@ -1,7 +1,7 @@
 // src/components/WelcomeMessage.jsx
 import React from 'react';
 
-// Komponen WelcomeMessage menerima stopPropagation sebagai prop
+
 function WelcomeMessage({ stopPropagation }) {
   return (
     <div className="welcome-message" onClick={stopPropagation}>

@@ -12,7 +12,6 @@ function TopRightInfoPanel() {
         <span className="info-label">Status:</span>
         <span className="info-value">Available for Work</span>
       </div>
-      {/* Anda bisa menambahkan lebih banyak item di sini */}
     </div>
   );
 }
