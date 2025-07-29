@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'; 
 import './App.css';
 import Header from './components/Header';
-import NavBar from './components/Navbar';
+import Navbar from './components/Navbar';
 import TopRightInfoPanel from './components/TopRightInfoPanel';
 import WelcomeMessage from './components/WelcomeMessage';
 import Pendidikan from './components/Pendidikan';
