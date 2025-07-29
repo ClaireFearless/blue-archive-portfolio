@@ -7,7 +7,7 @@ import TopRightInfoPanel from './components/TopRightInfoPanel';
 import WelcomeMessage from './components/WelcomeMessage';
 import Pendidikan from './components/Pendidikan';
 import Informasi from './components/Informasi';
-import SosialMedia from './components/SosialMedia';
+import SosialMedia from './components/Sosialmedia';
 import Projek from './components/Projek';
 import Skills from './components/Skills';
 
